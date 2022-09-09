@@ -1,2 +1,1 @@
-#!/bin/bash
-$CFILE_0-main.c
+1-compiler
