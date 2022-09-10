@@ -26,7 +26,11 @@ int main(void)
         {
 	printf("Last digit of %d is %d and is 0\n", n, s);
 	}
-<<<<<<< c38d008b18676f16774155151031a0fcc1c46752
+<<<<<<< HEAD
+	if (num < 6)
+======= 
+	else if (s < 6)
+>>>>>>> c38d008b18676f16774155151031a0fcc1c46752
         {
 	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, s);
 	}
