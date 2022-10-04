@@ -1,25 +1,32 @@
-#ifndef MAIN_H
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
-#define MAIN_H
+/**
+ *  * create_array - creates an array of chars, and initializes it with
+ *   * a specific char
+ *    * @size: size of array
+ *     * @c: character to initialize with
+ *      *
+ *       * Return: Pointer
+ *        */
+char *create_array(unsigned int size, char c)
+{
+	unsigned int i;
+	char *s;
 
+	if (size <= 0)
+		return (0);
 
+	s = malloc(sizeof(char) * size);
 
-int _putchar(char c);
+	if (s == 0)
+		return (0);
 
-char *create_array(unsigned int size, char c);
+	for (i = 0; i < size; i++)
+		*(s + i) = c;
 
-char *_strdup(char *str);
+	*(s + i) = '\0';
 
-char *str_concat(char *s1, char *s2);
-
-int **alloc_grid(int width, int height);
-
-void free_grid(int **grid, int height);
-
-char *argstostr(int ac, char **av);
-
-char **strtow(char *str);
-
-
-
-#endif
+	return (s);
+}
