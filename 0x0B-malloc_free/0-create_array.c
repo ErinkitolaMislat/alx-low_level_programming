@@ -8,19 +8,17 @@
 
 /**
  *
- *  * create_array - creates an array of chars, and initializes it with
+ * create_array - creates an array of chars, and initializes it with
  *
- *   * a specific char
+ * a specific char
  *
- *    * @size: size of array
+ * @size: size of array
  *
- *     * @c: character to initialize with
+ * @c: character to initialize with
+ *   
+ * Return: Pointer
  *
- *      *
- *
- *       * Return: Pointer
- *
- *        */
+ */
 
 char *create_array(unsigned int size, char c)
 
