@@ -11,4 +11,7 @@ current = head;
 while (current)
 {
 next = current->next;
-
+free(current);
+current = next;
+}
+}
